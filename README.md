@@ -42,15 +42,16 @@ REACT_APP_FIREBASE_DB_URL = "파이어베이스 리얼타임 데이터베이스 
 ## 사용 라이브러리
 
 ```plaintext
-> typeScript
-> next
-> react-query
-> axios
-> react-redux
-> redux-tookit
-> @emotion/styled
-> @emotion-react
-> emotion-reset
+    > @emotion/react : 11.10.6,
+    > @emotion/styled : 11.10.6
+    > axios : 1.3.4
+    > emotion-reset : 3.0.1
+    > eslint : 8.35.0
+    > eslint-config-next : 13.2.1
+    > next : 13.2.1
+    > react-query : 3.39.3
+    > react-redux : 8.0.5
+    > typescript : 4.9.5
 ```
 
 <br/><br/>
@@ -192,17 +193,18 @@ FireBase Realtime DataBase (상품 데이터 관리)
 변경된 디렉토리 구조는 크게 다음과 같이 분리했습니다.<br/>
 
 - common : 공통으로 사용되는 컴포넌트, 타입, 유틸리티 함수 등 관리
-- features : 기능별 코드 관리
-- pages : 라우트 별 최종 렌더링 될 페이지
-- routes : 라우트 관련 코드 관리
+- app : 페이지 별 관리
+  <br/><br/>
 
-features 폴더의 경우 만들어야 되나 고민을 했지만, features 폴더가 없을 경우 10개가 넘는 폴더에서 common, page, routes 폴더가 각 기능 별 폴더와 뒤 섞일 경우를 생각하니 만드는 것이 좋을 것 같다는 생각을 했습니다.
-<br/><br/>
+app 폴더 내부는 다음과 같이 분리했습니다.<br/>
 
-![image](https://user-images.githubusercontent.com/85052351/221127840-2f556dbe-9426-4c5c-9b2a-2463b1bacd77.png)
-<br/><br/>
-pages 폴더의 경우 기존에 존재하지 않던 폴더입니다. 기존에는 각 페이지 별 최상위 컴포넌트를 route의 element로 연결해 줬지만, 최종 레이아웃 컴포넌트만 레이아웃으로 연결해 주는 역할을 해주기 위해 사용됩니다.
-<br/><br/>
-![image](https://user-images.githubusercontent.com/85052351/221127793-109abfd7-f59e-4d52-a8cf-9df38c856716.png)<br/><br/>
-기존 프로젝트에서는 route 관력 로직은 app.js에서 작성되었지만, 해당 로직은 routes 폴더 내부에서 관리하여 app.js 파일을 최대한 가볍게 유지합니다. 이렇게 features, pages, routes 폴더는 각각의 관심사인 특정 기능 제공, 페이지 최종 레이아웃 제공, route 기능 제공을 기준으로 분리해 주었습니다.
-<br/><br/>
+- components : 기능별 컴포넌트 관리
+- hooks : 페이지 별 관리
+- types : 기능별 타입 관리
+- utils : 기능별 유틸리티 함수 관리
+  <br/><br/>
+
+components 폴더 내부는 다음과 같이 분리했습니다.<br/>
+
+- view : 컴포넌트 view 관리
+- view rendering logic 관리
