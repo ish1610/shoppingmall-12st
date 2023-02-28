@@ -48,8 +48,6 @@ REACT_APP_FIREBASE_DB_URL = "파이어베이스 리얼타임 데이터베이스 
     > @emotion/styled : 11.10.6
     > axios : 1.3.4
     > emotion-reset : 3.0.1
-    > eslint : 8.35.0
-    > eslint-config-next : 13.2.1
     > next : 13.2.1
     > react-query : 3.39.3
     > react-redux : 8.0.5
