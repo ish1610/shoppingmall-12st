@@ -41,6 +41,8 @@ REACT_APP_FIREBASE_DB_URL = "파이어베이스 리얼타임 데이터베이스 
 
 ## 사용 라이브러리
 
+[라이브러리 선택 이유](https://nicehyun12.tistory.com/154)
+
 ```plaintext
     > @emotion/react : 11.10.6,
     > @emotion/styled : 11.10.6
