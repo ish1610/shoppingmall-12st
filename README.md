@@ -68,7 +68,9 @@ FireBase Realtime DataBase (상품 데이터 관리)
 
 <br/><br/>
 
-## <span id="folder">📂 디렉토리 구조</span>
+## <span id="folder">📂 디렉토리 구조</span><br/>
+
+[디렉토리 관련 게시글](https://nicehyun12.tistory.com/153)
 
 ### 💩 기존 디렉토리 구조
 
