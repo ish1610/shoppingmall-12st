@@ -1,8 +1,4 @@
-import {
-  colorLightBorder,
-  colorRed,
-  colorWhite,
-} from "@/app/common/styles/commonColor";
+import { colorLightBorder, colorRed } from "@/app/common/styles/commonColor";
 import { flexCenter } from "@/app/common/styles/flex";
 import styled from "@emotion/styled";
 import Link from "next/link";

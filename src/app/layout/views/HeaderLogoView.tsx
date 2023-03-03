@@ -3,11 +3,15 @@ import logo from "../../../../public/siba.png";
 import Image from "next/image";
 import { IHeaderLogoProps } from "../types/header";
 import Link from "next/link";
-import Inner from "@/app/common/components/Inner";
+import { flexCenter } from "@/app/common/styles/flex";
 
 const HeaderLogoContainer = styled.div`
   position: absolute;
-  top: 20px;
+  top: 52px;
+  bottom: 0;
+  margin: 0 auto;
+  ${flexCenter}
+
   .logo__name {
     text-align: center;
     margin-top: 5px;

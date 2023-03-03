@@ -1,32 +1,31 @@
 import Inner from "@/app/common/components/Inner";
-import { colorWhite } from "@/app/common/styles/commonColor";
+import { colorBasicBlack, colorWhite } from "@/app/common/styles/commonColor";
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 import HeaderController from "../HeaderController";
 import HeaderLogo from "../HeaderLogo";
 import Promotion from "../Promotion";
-import { IHeaderLayoutProps } from "../types/header";
+import { IHeaderLayoutProps, ThemeHeaderLayout } from "../types/header";
 
-const HeaderLayoutContanier = styled.header`
+const HeaderLayoutContanier = styled.header<ThemeHeaderLayout>`
   position: fixed;
   width: 100%;
+  height: ${(props) => (props.isShowPromotion ? "160px" : "120px")};
+
   background-color: ${colorWhite};
+
+  border-bottom: 1px solid ${colorBasicBlack};
 `;
 
-const showPromotion = css`
-  height: 118px;
-  background-color: ${colorWhite};
-`;
+const showPromotion = css``;
 
 const hidePromotion = css`
   transform: translateY(-42px);
-  height: 85px;
-  background-color: ${colorWhite};
 `;
 
 const HeaderLayoutView = ({ isShowPromotion }: IHeaderLayoutProps) => {
   return (
-    <HeaderLayoutContanier>
+    <HeaderLayoutContanier isShowPromotion={isShowPromotion}>
       <Promotion />
       <Inner styles={isShowPromotion ? showPromotion : hidePromotion}>
         <HeaderLogo />

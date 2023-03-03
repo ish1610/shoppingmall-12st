@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import { ClassNames, css } from "@emotion/react";
+import { css } from "@emotion/react";
 import { IInnerProps } from "../types/common";
 
 const inner = css`

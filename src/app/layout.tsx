@@ -3,8 +3,8 @@ import GlobalStyle from "./common/styles/GlobalStyle";
 
 import HeaderLayout from "./layout/HeaderLayout";
 
-import Promotion from "./layout/Promotion";
 import Providers from "./globalRedux/Provider";
+import Layout from "./common/components/Layout";
 
 export default function RootLayout({
   children,
@@ -19,7 +19,7 @@ export default function RootLayout({
           <GlobalStyle />
           <HeaderLayout />
 
-          {children}
+          <Layout>{children}</Layout>
         </Providers>
       </body>
     </html>

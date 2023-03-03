@@ -61,3 +61,7 @@ export type ThemeHeaderSearch = {
 export type ThemeHeaderCart = {
   isCartHightlighted: boolean;
 };
+
+export type ThemeHeaderLayout = {
+  isShowPromotion: boolean;
+};
