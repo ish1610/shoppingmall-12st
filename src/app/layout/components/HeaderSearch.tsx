@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
-import useSearch from "./hooks/useSearch";
-import { IHeaderSearchProps } from "./types/header";
+import useSearch from "../hooks/useSearch";
+import { IHeaderSearchProps } from "../types/header";
 import HeaderSearchView from "./views/HeaderSearchView";
 
 const HeaderSearch = () => {

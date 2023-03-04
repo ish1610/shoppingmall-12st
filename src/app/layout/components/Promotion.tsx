@@ -5,9 +5,9 @@ import {
   hidePromotion,
   selectIsShowPromotion,
   showPromotion,
-} from "../globalRedux/features/promotionSlice";
-import { IPromotionProps } from "./types/promotion";
-import { handlePromotionScroll } from "./utils/animation";
+} from "../../globalRedux/features/promotionSlice";
+import { IPromotionProps } from "../types/promotion";
+import { handlePromotionScroll } from "../utils/animation";
 import PromotionView from "./views/PromotionView";
 
 const Promotion = () => {

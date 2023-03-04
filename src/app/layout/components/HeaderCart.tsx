@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { IHeaderCartProps } from "./types/header";
+import { IHeaderCartProps } from "../types/header";
 import HeaderCartView from "./views/HeaderCartView";
 
 const HeaderCart = () => {

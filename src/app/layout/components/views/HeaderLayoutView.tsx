@@ -5,7 +5,7 @@ import styled from "@emotion/styled";
 import HeaderController from "../HeaderController";
 import HeaderLogo from "../HeaderLogo";
 import Promotion from "../Promotion";
-import { IHeaderLayoutProps, ThemeHeaderLayout } from "../types/header";
+import { IHeaderLayoutProps, ThemeHeaderLayout } from "../../types/header";
 
 const HeaderLayoutContanier = styled.header<ThemeHeaderLayout>`
   position: fixed;

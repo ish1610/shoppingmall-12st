@@ -1,7 +1,7 @@
 "use client";
 import GlobalStyle from "./common/styles/GlobalStyle";
 
-import HeaderLayout from "./layout/HeaderLayout";
+import HeaderLayout from "./layout/components/HeaderLayout";
 
 import Providers from "./globalRedux/Provider";
 import Layout from "./common/components/Layout";

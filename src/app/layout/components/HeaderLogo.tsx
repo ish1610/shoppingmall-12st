@@ -1,6 +1,6 @@
 import React from "react";
-import { ROUTE } from "../common/types/route";
-import { IHeaderLogoProps } from "./types/header";
+import { ROUTE } from "../../common/types/route";
+import { IHeaderLogoProps } from "../types/header";
 import HeaderLogoView from "./views/HeaderLogoView";
 
 const HeaderLogo = () => {

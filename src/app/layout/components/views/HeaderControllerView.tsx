@@ -6,7 +6,10 @@ import Link from "next/link";
 import { FaUserTag, FaHeart } from "react-icons/fa";
 import { FiLogIn } from "react-icons/fi";
 import HeaderCart from "../HeaderCart";
-import { IHeaderControllerProps, ThemeHeaderController } from "../types/header";
+import {
+  IHeaderControllerProps,
+  ThemeHeaderController,
+} from "../../types/header";
 
 const HeaderControllerContainer = styled.div<ThemeHeaderController>`
   position: absolute;

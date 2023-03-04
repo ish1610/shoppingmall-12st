@@ -8,7 +8,7 @@ import {
 } from "@/app/common/styles/commonColor";
 import { flexCenter, flexSpacebetween } from "@/app/common/styles/flex";
 import styled from "@emotion/styled";
-import { IHeaderSearchProps, ThemeHeaderSearch } from "../types/header";
+import { IHeaderSearchProps, ThemeHeaderSearch } from "../../types/header";
 import { AiOutlineSearch } from "react-icons/ai";
 
 const SearchFormWrap = styled.form<ThemeHeaderSearch>`

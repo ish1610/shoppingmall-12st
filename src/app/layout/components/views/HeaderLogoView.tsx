@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
-import logo from "../../../../public/siba.png";
+import logo from "../../../../../public/siba.png";
 import Image from "next/image";
-import { IHeaderLogoProps } from "../types/header";
+import { IHeaderLogoProps } from "../../types/header";
 import Link from "next/link";
 import { flexCenter } from "@/app/common/styles/flex";
 

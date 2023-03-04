@@ -1,11 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import { useSelector } from "react-redux";
-import { ROUTE } from "../common/types/route";
-import { selectIsShowPromotion } from "../globalRedux/features/promotionSlice";
+import { ROUTE } from "../../common/types/route";
+import { selectIsShowPromotion } from "../../globalRedux/features/promotionSlice";
 import HeaderSearch from "./HeaderSearch";
-import { IHeaderControllerProps } from "./types/header";
-import { handleHeaderControllerAnimation } from "./utils/animation";
-import { manageRefArray } from "./utils/refArray";
+import { IHeaderControllerProps } from "../types/header";
+import { handleHeaderControllerAnimation } from "../utils/animation";
+import { manageRefArray } from "../utils/refArray";
 import HeaderControllerView from "./views/HeaderControllerView";
 
 const HeaderController = () => {

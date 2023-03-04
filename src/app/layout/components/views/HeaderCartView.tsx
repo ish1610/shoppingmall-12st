@@ -6,7 +6,7 @@ import {
 import styled from "@emotion/styled";
 
 import { BsFillCartXFill, BsFillCartFill } from "react-icons/bs";
-import { IHeaderCartProps, ThemeHeaderCart } from "../types/header";
+import { IHeaderCartProps, ThemeHeaderCart } from "../../types/header";
 
 const HeaderCartContainer = styled.div<ThemeHeaderCart>`
   position: relative;

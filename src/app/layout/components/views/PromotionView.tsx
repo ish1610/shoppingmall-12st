@@ -7,7 +7,7 @@ import {
 import { flexCenter } from "@/app/common/styles/flex";
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
-import { IPromotionProps } from "../types/promotion";
+import { IPromotionProps } from "../../types/promotion";
 
 const PromotionContainer = styled.div`
   background-color: ${colorBasicBlack};
